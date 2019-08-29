@@ -1,0 +1,35 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background:#4e0d6e;
+  color: floralwhite;
+}
+address {
+  font-size: 15px;
+  margin: 0px;
+  color: #ffffff;
+}
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  background:#a30ced;
+}
+
+
+
+#Temprature
+{
+  height: 40px;
+  width: 90px;
+}

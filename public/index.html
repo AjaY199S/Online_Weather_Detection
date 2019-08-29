@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Weather Detection System</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shirk-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    
+
+    <!-- firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+    <script type="text/javascript" src="java_script.js"></script>
+    <script type="text/javascript" src="firebase_setting.js"></script>
+	
+</head>
+<body onload="info_load()">
+ 	
+	<!-- Header start-->
+	<header class="jumbotron header"> 
+		<div class="container mr-auto">
+			<div class="row text-white row-header">
+				<div class="col-lg-8 col-sm-6">
+					<h1>Online Weather Detection System</h1>
+						<p>Aim is to develop a wireless controlled Online Weather Detection System to provide which is automatic sens the temprature and humidity using the field sensores.</p>
+				</div>
+				<div class="col-lg-4 col-sm-12 align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+			</div>
+		
+	</header>
+	<!-- Header End -->
+<section>
+        <!-- Seen Information Start -->
+        <div class="row row-content text-center mr-auto text-white">
+            <!--Temprature Show start--> 
+            <div class="col-lg-6 col-sm-12 mb-2">
+                  <div class="card bg-danger">
+                    <div class="card-header bg-primary">
+                        <img src="img/temp_logo.png" id="temp_logo">
+                        <h1>Temprature</h1>
+                    </div>
+                    <div class="card-body">
+                        <h1><span id="temp_info"></span> °C</h1>
+                    </div> 
+                    
+                  </div>
+            </div>
+            <!--Temprature Show End --> 
+            <!--Humidity Show start--> 
+            <div class="col-lg-6 col-sm-12 mb-2">
+                  <div class="card bg-warning">
+                    <div class="card-header bg-success">
+                        <img src="img/humidity_logo.png" id="hum_logo">
+                        <h1>Humidity</h1>
+                    </div>
+                    <div class="card-body">
+                        <h1><span id="humidity_info"></span> %</h1>
+                    </div> 
+                    
+                  </div>
+            </div>
+            <!--Humidity Show End --> 
+        </div>
+        <!-- Seen Information End -->
+	</div>
+</section>	
+<!-- footer start -->
+<footer class="jumbotron footer">
+	<div class="row">
+		<div class="col-lg-6  col-md-6 col-12">
+			<h5>Our Address</h5>
+			<address>
+				Lovely Professional University,<br>
+				Jalandhr-Delhi G. T. Road(NH-1),<br>
+				Phagwara, Punjab(India) - 144411<br>
+				<i class="fa fa-phone fa-lg"></i> : +91 90094 10700<br>
+				<i class="fa fa-fax fa-lg"></i> : +91 98774 42655<br>
+				<i class=" fa fa-envelope-o fa-lg"></i> : <a href="mailto:thakurajaypratapsingh877@gmail.com">thakurajaypratapsingh877@gmail.com</a>
+			</address>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-12 align-self-centerlf">
+			<div class="text-center">
+				<a class="btn btn-social-ico btn-google" href="http://google.com">
+					<i class="fa fa-google-plus fa-lg"></i> 
+				</a>
+				<a class="btn btn-social-ico btn-facebook" href="http://www.facebook.com/profile.php?id">
+					<i class=" fa fa-facebook fa-lg"></i>
+				</a>
+				<a class="btn btn-social-ico btn-linkedin" href="http://www.linkedin.com/in/"> 
+					<i class="fa fa-linkedin fa-lg"></i>
+				</a>
+				<a class="btn btn-social-ico btn-twitter" href="http://www.twitter.com/"> 
+					<i class="fa fa-twitter fa-lg"></i>
+				</a>
+				<a class="btn btn-social-ico btn-google" href="http://www.youtube.com/">
+					<i class="fa fa-youtube fa-lg"></i>
+				</a>
+				<a class="btn btn-social-ico btn-google" href="http://mailto:">
+					<i class=" fa fa-envelope-o fa-lg"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center">
+		<div class="col-auto">
+			<p>© Copyright 2019 Smart Irrigation System</p>
+		</div>
+	</div>
+</footer>
+<!-- footer end-->
+	
+</body>
+</html>
